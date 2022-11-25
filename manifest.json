@@ -8,6 +8,11 @@
         "js": ["content.js"],
         "matches": ["https://*.netflix.com/*"]
     }],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
     "permissions": [
         "tabs",
         "storage"

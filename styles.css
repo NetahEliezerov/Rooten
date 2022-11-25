@@ -1,8 +1,8 @@
 .openOnRottenBtn {
-    width: 30% !important;
-    background: rgb(255, 141, 28);
-    height: 3vh;
-    text-align: center;
-    padding: 0.6em;
-    border-radius: 4px;
+    background: orange !important;
+    transition-duration: 200ms;
+}
+
+.openOnRottenBtn:hover {
+    background: rgb(255, 209, 124) !important;
 }

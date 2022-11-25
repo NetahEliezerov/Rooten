@@ -7,7 +7,11 @@ const runTester = () => {
         console.log(htmlValue, fixedValueForRotten);
 
         const buttonsInnerHtml = document.getElementsByClassName('buttonControls--container')[0].innerHTML;
-        document.getElementsByClassName('buttonControls--container')[0].innerHTML = `<a class="openOnRottenBtn" href="https://www.rottentomatoes.com/tv/${fixedValueForRotten}">Open on Rotten!</a>${buttonsInnerHtml}`;
+        document.getElementsByClassName('buttonControls--container')[0].innerHTML = `
+        <button class="color-primary hasLabel hasIcon ltr-1jtux27 openOnRottenBtn" tabindex="-1" onclick="window.open('https://www.rottentomatoes.com/tv/${fixedValueForRotten}','popUpWindow','height=500,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');" type="button">
+        <span class="ltr-j0gpa2">Open on Rotten!</span>
+        </button>
+        ${buttonsInnerHtml}`;
     }
 };
 runTester();

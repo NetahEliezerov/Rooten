@@ -9,7 +9,10 @@
         "matches": ["https://*.netflix.com/*"]
     }],
     "permissions": [
-        "tabs"
+        "tabs",
+        "storage"
     ],
-    "action": {}
+    "action": {
+        "default_popup": "popup/index.html"
+    }
 }

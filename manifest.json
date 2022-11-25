@@ -1,0 +1,15 @@
+{
+    "name": "Rooten",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Find your netflix series/movie on rotten tomatoes!",
+    "content_scripts": [{
+        "css": ["styles.css"],
+        "js": ["content.js"],
+        "matches": ["https://*.netflix.com/*"]
+    }],
+    "permissions": [
+        "tabs"
+    ],
+    "action": {}
+}

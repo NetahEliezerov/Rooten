@@ -1,6 +1,6 @@
 {
     "name": "Rooten",
-    "version": "1.0",
+    "version": "1.1.1",
     "manifest_version": 3,
     "description": "Find your netflix series/movie on rotten tomatoes!",
     "content_scripts": [{
@@ -14,7 +14,6 @@
         "128": "icon.png"
     },
     "permissions": [
-        "tabs",
         "storage"
     ],
     "action": {

@@ -1,6 +1,14 @@
 const colorPicker = document.getElementById('colorPicker');
 const platformPicker = document.getElementById('platformPicker');
 
+chrome.storage.sync.get("platformToOpenWith", function (platformValue) {
+    platformPicker.value = platformValue.platformToOpenWith;
+})
+
+chrome.storage.sync.get("openWithRootenButtonColor", function (colorValue) {
+    colorPicker.value = colorValue.openWithRootenButtonColor;
+})
+
 colorPicker.addEventListener('change', () => {
     const updatedColor = document.getElementById('colorPicker');
     console.log(updatedColor.value)
